@@ -1,0 +1,50 @@
+<div class="navbar bg-base-100">
+    <div class="flex-1">
+        <a href="#" class="btn btn-ghost text-xl">DIPTI</a>
+    </div>
+    <div class="flex-none">
+        <!-- Horizontal Menu Links -->
+        <div class="flex space-x-4">
+            <a href="{% url 'home' %}" class="btn btn-ghost">Home</a>
+            <a href="#" class="btn btn-ghost">Student</a>
+            
+            <!-- Section Dropdown -->
+            <div class="dropdown dropdown-end">
+                <a tabindex="0" class="btn btn-ghost">
+                    Section
+                </a>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a href="#">Section 1</a></li>
+                    <li><a href="#">Section 2</a></li>
+                    <li><a href="#">Section 3</a></li>
+                    <li><a href="#">Section 4</a></li>
+                </ul>
+            </div>
+            <a href="#" class="btn btn-ghost">Semester</a>
+            <a href="#" class="btn btn-ghost">Batch</a>
+            <a href="#" class="btn btn-ghost">Subject</a>
+            <a href="#" class="btn btn-ghost">Program</a>
+            <a href="#" class="btn btn-ghost">Result</a>
+            <a href="#" class="btn btn-ghost">Gradesheet</a>
+        </div>
+
+        <!-- User Profile Dropdown -->
+        <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full">
+                    <img alt="User Avatar" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                </div>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li>
+                    <a class="justify-between">
+                        Profile
+                        <span class="badge">New</span>
+                    </a>
+                </li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="{% url 'logoutpage' %}">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    
+    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center min-h-screen p-6 bg-gray-100">
+
+    <div class="overflow-x-auto">
+        <table class="table table-xs mx-auto">
+            <thead>
+                <tr>
+                    <th class="text-center"></th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Roll Number</th>
+                    <th class="text-center">Course</th>
+                    <th class="text-center">Year</th>
+                    <th class="text-center">Last Login</th>
+                    <th class="text-center">Status</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="text-center">1</th>
+                    <td class="text-center">John Doe</td>
+                    <td class="text-center">101</td>
+                    <td class="text-center">Computer Science</td>
+                    <td class="text-center">3rd Year</td>
+                    <td class="text-center">12/16/2020</td>
+                    <td class="text-center">Active</td>
+                    <td class="text-center">
+                        <button class="btn btn-sm btn-outline btn-primary mr-2 hover:bg-blue-500 hover:text-white transition">Edit</button>
+                        <button class="btn btn-sm btn-outline btn-danger hover:bg-red-500 hover:text-white transition">Delete</button>
+                    </td>
+                </tr>
+                
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/daisyui.js"></script>
+</body>
+</html>
+{% endblock body %}
